@@ -86,18 +86,11 @@ function validateSignup(element){
 function checkExistence(inputEmail){
     for(var i = 0; i < users.length; i++){
         if(inputEmail.value.toLowerCase() == users[i].userEmail.toLowerCase()){
-            // emailAlert.classList.remove('d-none');
             signupEmail.nextElementSibling.classList.remove('d-none');
             signupEmail.nextElementSibling.textContent = "Email already exists.";
             signupEmail.classList.add('is-invalid');
             return true;
         } 
-        // else{
-        //     emailAlert.classList.add('d-none');
-        //     signupEmail.classList.remove('is-invalid');
-        
-        //     return false;
-        // }
     }
 }
 
