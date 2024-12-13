@@ -68,6 +68,8 @@ function validateSignup(element){
         element.classList.remove('is-invalid')
         element.classList.add('is-valid')
         element.nextElementSibling.classList.add('d-none');
+        showPassIcon.style.top = '50%'
+        hidePassIcon.style.top = '50%'
         return true
     } else{
         element.classList.remove('is-valid')
