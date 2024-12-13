@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Login</title>
+            <link rel="stylesheet" href="./CSS/all.min.css">
+            <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+            <link rel="stylesheet" href="./CSS/index.css">
+        </head>
+
+
+        <body>
+            <section class="signup mt-5">
+                <div class="container text-center">
+                    <div class="smartLog w-75 mx-auto p-5">
+                        <h1 class="mb-4">Smart Login System</h1>
+    
+                        <form>
+                            <input class="form-control mb-3 rounded-1" type="email" placeholder="Enter your email" id="loginEmail" autocomplete="off">
+
+                            <div class="passInput position-relative mb-3">
+                                <input class="form-control rounded-1 " type="password" placeholder="Enter your password" id="loginPass" autocomplete="off">
+    
+                                <span class="showPassIcon text-white position-absolute d-none"><i class="fa-solid fa-eye"></i></span>
+
+                                <span class="hidePassIcon text-white position-absolute d-none"><i class="fa-solid fa-eye-slash"></i></span>
+                            </div>
+
+                            <p class="alert alert-danger text-danger d-none" id="loginAlert"></p>
+
+                            <button class="btn border border-1 w-100 rounded-1 mb-3 mt-3" id="loginBtn">Login</button>
+                        </form>
+    
+                        <p>Don’t have an account? <a href="./pages/signup.html">Sign up</a></p>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <script src="JS/bootstrap.bundle.min.js"></script>
+            <script src="JS/index.js"></script>
+        </body>
+    </html>

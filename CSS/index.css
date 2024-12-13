@@ -1,0 +1,116 @@
+:root{
+    --primary-color: #24353F;
+    --secondary-color: #17A2B8;
+    --section-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* .passInput{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+} */
+.passInput .showPassIcon, .passInput .hidePassIcon{
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+/* =================================================================== */
+
+/* Signup page */
+
+.signup .smartLog{
+    box-shadow: var(--section-shadow);
+}
+
+.signup .smartLog h1, .signup .smartLog button{
+    color: var(--secondary-color);
+}
+
+.signup .smartLog input{
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+}
+
+.signup .smartLog input::placeholder{
+    color: #B6B6B6;
+}
+
+.signup .smartLog button{
+    border-color: var(--secondary-color) !important;
+}
+
+.signup .smartLog button:hover{
+    background-color: #17A2B8;
+    color: white;
+}
+
+.signup .smartLog p{
+    color: white;
+}
+
+.signup .smartLog p a:hover{
+    text-decoration: underline;
+}
+
+/* =================================================================== */
+
+/* Home page */
+
+.homeBody{
+    height: 90vh;
+}
+
+.navbar{
+    background-color: var(--primary-color);
+    box-shadow: var(--section-shadow);
+}
+
+.navbar #logoutBtn:hover{
+    background-color: #FFC107;
+    color: black;
+}
+
+.messageBox{
+    color: var(--secondary-color);
+    box-shadow: var(--section-shadow);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =================================================================== */
+
+/* media */
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1140px;
+    }
+}
